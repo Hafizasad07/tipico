@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipico</title>
+    <link rel="stylesheet" href="./resources/mystyle.css">
+    <link rel="stylesheet" href="./resources/general_sitecss.css">
+    <link rel="stylesheet" href="./resources/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="./resources/course_view.css">
+<body>
+<div class="wrapper">
+<div class="descontent_border mobcontent_border">
+        <div class="mainborder">
+            <div class="course-view-left-panel leftpanelquery">
+            <div>
+            <h2 class="heading mobheading">
+                Course Content				
+            </h2>
+            </div>
+        <ul class="desul mobul">                    
+        <details class="desdetails mobdetails">
+            <summary>
+                <div>
+                    <a href="#" class="course-view-left-panel-list-item">   
+                        <span class="desspan mobspan accordion_topic" >1. Project Management - Definitions</span>
+                    </a>
+                </div> 
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon"  viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"  /></svg>
+                </span>
+            </summary>
+            <div class="ancherset mobancherset">
+                <a href="#" class="course-view-left-panel-list-item firsttext" style="padding: 20px;">
+                    
+                    <span style="color:#000; font-weight:normal;">What is a Project ?</span>
+                </a>
+
+                <a href="#" class="course-view-left-panel-list-item firsttext" style="padding: 20px;">
+                    
+                    <span style="color:#000; font-weight:normal;">What is Project Management (PM) ?</span>
+                </a>
+            </div>
+        </li>
+        </details>
+        <details class="desdetails mobdetails">
+            <summary>
+                <div>
+                    <a href="#" class="course-view-left-panel-list-item">   
+                        <span class="desspan mobspan accordion_topic" >2. Management</span>
+                    </a>
+                </div> 
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon"  viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"  /></svg>
+                </span>
+            </summary>
+            <div class="ancherset mobancherset">
+                <a href="#" class="course-view-left-panel-list-item firsttext" style="padding: 20px;">
+                    
+                    <span style="color:#000; font-weight:normal;">What is a Project ?</span>
+                </a>
+
+                <a href="#" class="course-view-left-panel-list-item firsttext" style="padding: 20px;">
+                    
+                    <span style="color:#000; font-weight:normal;">What is Project Management (PM) ?</span>
+                </a>
+            </div>
+        </li>
+        </details>
+        </ul>
+        </div>
+        </div>
+</div>
+</div>
+<script>
+    var coll = document.getElementsByClassName("descollapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+    
+</script>
+</body>
+</html>
